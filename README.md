@@ -1,4 +1,4 @@
-# GST Billing Managment
+# GST Billing Management
 
 ## Overview
 
