@@ -7,11 +7,12 @@ import CreateProducts from "./pages/CreateProducts";
 import Sales from "./pages/Sales";
 import Revenue from "./pages/Revenue";
 import { ToastContainer } from "react-toastify";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    // errorElement:
+    errorElement: <Error />,
     element: <RootLayout />,
     children: [
       {
