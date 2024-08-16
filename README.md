@@ -18,3 +18,23 @@ It is a gst billing managment webApp built with Reactjs.
 - **DaisyUI:** For making different component like stats , dropdown etc.
 - **Redux:** For mataining global state and store user data globally.
 - **React Router v6:** For creating routing of webApp.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/rkshaw20/Taiyo-assignment.git](https://github.com/rkshaw20/gst-billing-assignment.git
+)
+
+2. Navigate to the project directory:
+   ```bash
+    cd gst-billing-assigment 
+3. Install the required dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   npm start
+5. Open your web browser and access the application at:
+   ```bash
+   http://localhost:3000
