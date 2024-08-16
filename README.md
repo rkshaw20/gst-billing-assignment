@@ -3,7 +3,8 @@
 ## Overview
 
 It is a gst billing managment webApp built with Reactjs.
-#### Live Link- https://gst-billing-assignment-rkshaw20s-projects.vercel.app/
+#### Live Link-  [Live Link - GST Billing](https://gst-billing-assignment-rkshaw20s-projects.vercel.app/){:target="_blank"}
+
 
 ## Key Features
 
