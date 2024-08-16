@@ -2,12 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
-import CreateCategories from "./pages/CreateCategories";
-import CreateProducts from "./pages/CreateProducts";
-import Sales from "./pages/Sales";
-import Revenue from "./pages/Revenue";
 import { ToastContainer } from "react-toastify";
 import Error from "./pages/Error";
+import { lazy, Suspense } from "react";
+import LoadingSpinner from "./components/LoadingSpinner";
+
+const Categories = lazy(() => import("./pages/CreateCategories"));
+const Products = lazy(() => import("./pages/CreateProducts"));
+const Revenue = lazy(() => import("./pages/Revenue"));
+const Sales = lazy(() => import("./pages/Sales"));
 
 const router = createBrowserRouter([
   {
@@ -17,19 +20,35 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <CreateCategories />,
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <Categories />
+          </Suspense>
+        ),
       },
       {
         path: "/products",
-        element: <CreateProducts />,
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <Products />
+          </Suspense>
+        ),
       },
       {
         path: "/sales",
-        element: <Sales />,
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <Sales />
+          </Suspense>
+        ),
       },
       {
         path: "/revenue",
-        element: <Revenue />,
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <Revenue />
+          </Suspense>
+        ),
       },
     ],
   },

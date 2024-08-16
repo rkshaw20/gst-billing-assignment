@@ -12,7 +12,7 @@ const Revenue = () => {
 
   // total revenue of present day
   const totalRevenueDay = bills
-    .filter(
+    ?.filter(
       (bill) => new Date(bill.date).toDateString() === today.toDateString()
     )
     .reduce(
@@ -28,7 +28,7 @@ const Revenue = () => {
   // total revenue of current month
 
   const totalRevenueMonth = bills
-    .filter((bill) => {
+    ?.filter((bill) => {
       const billDate = new Date(bill.date);
       return billDate >= startOfMonth && billDate < endOfMonth;
     })
@@ -45,7 +45,7 @@ const Revenue = () => {
   // total revenue of present year
 
   const totalRevenueYear = bills
-    .filter((bill) => new Date(bill.date).getFullYear() === currentYear)
+    ?.filter((bill) => new Date(bill.date).getFullYear() === currentYear)
     .reduce(
       (sum, bill) =>
         sum +
