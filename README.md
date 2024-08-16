@@ -23,12 +23,11 @@ It is a gst billing managment webApp built with Reactjs.
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/rkshaw20/Taiyo-assignment.git](https://github.com/rkshaw20/gst-billing-assignment.git
-)
+   git clone https://github.com/rkshaw20/gst-billing-assignment.git
 
 2. Navigate to the project directory:
    ```bash
-    cd gst-billing-assigment 
+    cd gst-billing-assignment 
 3. Install the required dependencies:
    ```bash
    npm install
